@@ -1,0 +1,36 @@
+.portfolio__header {
+  width: 100vw;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.portfolio__header h1 {
+  font-size: 9.1rem;
+  font-weight: 500;
+  margin: 0;
+  white-space: nowrap;
+  margin-top: auto;
+  transition: all 1s ease-in-out;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.portfolio__header-animation:nth-of-type(2),
+.portfolio__header-animation:nth-of-type(4) {
+  text-align: right;
+}
+
+@media screen and (max-width: 48em) {
+  .portfolio__header h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__header h1 {
+    font-size: 3.5rem;
+    padding: 0.8rem;
+  }
+}

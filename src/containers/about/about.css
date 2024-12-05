@@ -1,0 +1,114 @@
+.portfolio__about-container {
+  border-bottom: 1px solid var(--color-text);
+}
+
+.portfolio__about-text {
+  border-left: 1px solid var(--color-text);
+  padding: 3rem 3rem;
+  font-size: 1.6rem;
+}
+
+.portfolio__marquee {
+  display: flex;
+  width: 100vw;
+
+  border-bottom: 1px solid var(--color-text);
+}
+.portfolio__about-skills {
+  max-width: 100%;
+}
+
+.portfolio__about-skills h1 {
+  font-size: 8rem;
+  font-weight: 500;
+}
+
+.portfolio__about_animate img {
+  width: 200px;
+  height: 200px;
+  animation: animate1 4s linear infinite;
+}
+
+.portfolio__about_animate {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    var(--color-text) 10%,
+    transparent 10%,
+    transparent 50%,
+    var(--color-text) 50%,
+    var(--color-text) 60%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-size: 40px 40px;
+
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 40px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio__about_animate img {
+    width: 150px;
+    height: 150px;
+  }
+  .portfolio__about-skills h1 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .portfolio__about-text {
+    font-size: 1.2rem;
+    padding: 2rem 2rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .portfolio__about_animate img {
+    width: 100px;
+    height: 100px;
+  }
+  .portfolio__about-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .portfolio__about-skills h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .portfolio__about-text {
+    font-size: 1.1rem;
+    padding: 2rem 2rem;
+  }
+  .portfolio__about_animate {
+    background-size: 20px 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .portfolio__about_animate {
+    height: 150px;
+  }
+  .portfolio__circle:nth-child(2) {
+    border-right: none;
+  }
+  .portfolio__about-skills h1 {
+    font-size: 2rem;
+  }
+}

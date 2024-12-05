@@ -1,0 +1,35 @@
+.portfolio__animations-container {
+  grid-template-columns: repeat(4, 1fr);
+  height: auto;
+}
+
+.portfolio__circle {
+  border-right: 1px solid var(--color-text);
+}
+
+@media screen and (max-width: 575px) {
+  .portfolio__circle:nth-child(2) {
+    border-right: none;
+  }
+  .portfolio__animations-container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__circle:nth-child(1),
+  .portfolio__circle:nth-child(2) {
+    border-bottom: 1px solid var(--color-text);
+  }
+  .portfolio__circle:nth-child(2) {
+    border-right: none;
+  }
+  .portfolio__animations-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.dot {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}

@@ -1,0 +1,38 @@
+.portfolio__projects {
+  width: 100vw;
+  height: auto;
+}
+
+.portfolio__projects h1 {
+  font-size: 5rem;
+}
+
+.portfolio__text {
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.rotating {
+  transition: transform 0.1s ease-out; /* Smooth rotation */
+}
+
+@media screen and (max-width: 48em) {
+  .portfolio__projects h1 {
+    font-size: 3rem;
+  }
+  .portfolio__text {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio__projects h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,8 @@
+.portfolio__logo-container {
+  display: flex;
+
+  height: 450px;
+  width: auto;
+  position: absolute;
+  margin-left: 45%;
+}

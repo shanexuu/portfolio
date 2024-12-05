@@ -1,0 +1,12 @@
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+:root {
+  --font-base: 'Neue Haas Grotesk Display Pro', sans-serif;
+  --color-bg: #002fa7;
+  --color-text: #b45c2c;
+}
+
+::selection {
+  background: #b45c2c;
+  color: #002fa7;
+}

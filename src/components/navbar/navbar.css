@@ -1,0 +1,71 @@
+.portfolio__navbar {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+.portfolio__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+
+  width: 100%;
+}
+
+.portfolio__links a {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.8rem;
+  z-index: 999;
+  color: plum;
+}
+
+.portfolio__links a::before,
+.portfolio__links a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: plum;
+  transform: scaleY(0);
+  transition: transform 0.5s ease;
+}
+
+.portfolio__links a::before {
+  left: -8px;
+  transform-origin: center top;
+}
+
+.portfolio__links a:hover::before {
+  transform-origin: center bottom;
+  transform: scaleY(1);
+}
+
+.portfolio__links a::after {
+  right: -8px;
+  transform-origin: center bottom;
+}
+
+.portfolio__links a:hover::after {
+  transform-origin: center top;
+  transform: scaleY(1);
+}
+
+.react-icons {
+  vertical-align: text-top;
+}
+
+.offcanvas.offcanvas-end {
+  width: 100% !important;
+}
+
+.offcanvas {
+  background-color: var(--color-bg);
+  mix-blend-mode: initial;
+}

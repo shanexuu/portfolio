@@ -1,0 +1,141 @@
+.portfolio__project {
+  align-items: center;
+
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.portfolio__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid var(--color-text);
+}
+
+.portfolio__project-text {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.portfolio__project-text h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.portfolio__img img {
+  width: 550px;
+  height: auto;
+}
+
+.portfolio__project-text h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.portfolio__project-text h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.portfolio__project-text a {
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portfolio__des {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.portfolio__project-more {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__project-text h1 {
+    font-size: 1.85rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .portfolio__des {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  .portfolio__project-text h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .portfolio__project {
+    height: auto;
+  }
+  .portfolio__img img {
+    width: 275px;
+    height: auto;
+  }
+
+  .portfolio__project-text h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .portfolio__des {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .portfolio__project-more {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__project {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .portfolio__img {
+    border-right: none;
+  }
+
+  .portfolio__img img {
+    width: 95%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .portfolio__project-text h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .portfolio__des {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .portfolio__project-text h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .portfolio__project-text a {
+    font-size: 0.85rem;
+  }
+}
